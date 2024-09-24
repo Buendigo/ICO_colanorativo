@@ -1,24 +1,32 @@
+/*
+Joshua
+*/
+
 #include <stdio.h> 
 int main() 
 {
 //Este programa calcula que dia es mañana.
-int dia, mes, año;
-scanf("%d %d %d", &dia, &mes, &año);
-int diasPorMes[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-if ((año % 4 == 0 && año % 100 != 0) || (año % 400 == 0)) 
-{
-diasPorMes[1] = 29;
-}
-dia++; 
-if (dia > diasPorMes[mes - 1]) 
-{
-dia = 1;
-mes++;
-} if
-(mes > 12) 
-{
-mes = 1; 
-año++;
-}
-printf("%02d %02d %04d", dia, mes, año); return 0;
+  int dia, mes, año;
+  scanf("%d %d %d", &dia, &mes, &año);
+
+  int diasPorMes[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+
+  if ((año % 4 == 0 && año % 100 != 0) || (año % 400 == 0)) 
+  {
+    diasPorMes[1] = 29;
+  }
+  dia++; 
+  if (dia > diasPorMes[mes - 1]) 
+  {
+    dia = 1;
+    mes++;
+  }
+  if(mes > 12) 
+  {
+    mes = 1; 
+    año++;
+  }
+    printf("%02d %02d %04d", dia, mes, año);
+
+  return 0;
 }
