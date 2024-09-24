@@ -1,6 +1,7 @@
 #include <stdio.h> 
 int main() 
 {
+//Este programa calcula que dia es mañana.
 int dia, mes, año;
 scanf("%d %d %d", &dia, &mes, &año);
 int diasPorMes[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
