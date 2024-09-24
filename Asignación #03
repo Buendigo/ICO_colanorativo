@@ -1,11 +1,12 @@
+//Este es un programa que calcula que dia sera mañana.
 /*
+Garcés Díaz Gustavo Osei
 Joshua
 */
 
 #include <stdio.h> 
 int main() 
 {
-//Este programa calcula que dia es mañana.
   int dia, mes, año;
   scanf("%d %d %d", &dia, &mes, &año);
 
