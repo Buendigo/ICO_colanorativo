@@ -1,16 +1,17 @@
 //Este es un programa que calcula que dia sera mañana.
 /*
 ICO Grupo 1107
+Borja Hernandez Joshua
+Buendia Ruiz David 
 Garcés Díaz Gustavo Osei
-Joshua
-David Buendia Ruiz 
+Tellez Pascual Eric Benjamin 
 */
 
 #include <stdio.h> 
 int main() 
 {
   int dia, mes, año;
-  scanf("%d %d %d", &dia, &mes, &año);
+  scanf_s("%d %d %d", &dia, &mes, &año);
 
   int diasPorMes[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
@@ -29,7 +30,7 @@ int main()
     mes = 1; 
     año++;
   }
-    printf("%02d %02d %04d", dia, mes, año);
-
+    printf("%02d %02d %04d \n", dia, mes, año);
+    printf("Gracias por ver");
   return 0;
 }
